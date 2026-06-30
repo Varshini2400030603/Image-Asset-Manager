@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "tRH4Vk5jRxHNZuA70ouf3"
+uri = "file://artifacts/jmr-infra/src/assets/hero.png"
+type = "image"
+title = "Luxury apartment building in India"
+
+[[generated]]
+id = "BJkhalY4iPyp_279BMRcn"
+uri = "file://artifacts/jmr-infra/src/assets/plot1.png"
+type = "image"
+title = "Premium open plot with gate"
+
+[[generated]]
+id = "sEYEnp-5UFUbnOSqTTz_I"
+uri = "file://artifacts/jmr-infra/src/assets/apartment1.png"
+type = "image"
+title = "Modern apartment complex"
+
+[[generated]]
+id = "B4uQEvW2fygrLditGvh4u"
+uri = "file://artifacts/jmr-infra/src/assets/villa1.png"
+type = "image"
+title = "Luxury villa exterior"
+
+[[generated]]
+id = "XOs81Ui2RgHuou5XGEfrI"
+uri = "file://artifacts/jmr-infra/src/assets/commercial1.png"
+type = "image"
+title = "Commercial building exterior"
