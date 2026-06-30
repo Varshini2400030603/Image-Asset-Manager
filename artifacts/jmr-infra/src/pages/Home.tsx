@@ -70,7 +70,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* About Us */}
       <section id="about" className="py-24 bg-card text-card-foreground">
         <div className="container px-4 mx-auto">
@@ -90,7 +89,7 @@ export default function Home() {
               <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Happy Families</div>
             </div>
             <div className="p-4">
-              <div className="text-5xl font-serif font-bold text-accent mb-2">500+</div>
+              <div className="text-5xl font-serif font-bold text-accent mb-2">100+</div>
               <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Open Plots Sold</div>
             </div>
             <div className="p-4">
@@ -100,7 +99,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Services */}
       <section className="py-24 bg-secondary">
         <div className="container px-4 mx-auto">
@@ -137,7 +135,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Featured Projects */}
       <section className="py-24 bg-card">
         <div className="container px-4 mx-auto">
@@ -185,7 +182,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Testimonials */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container px-4 mx-auto">
@@ -210,7 +206,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* FAQ & Contact Section */}
       <section id="contact" className="py-24 bg-background">
         <div className="container px-4 mx-auto">
