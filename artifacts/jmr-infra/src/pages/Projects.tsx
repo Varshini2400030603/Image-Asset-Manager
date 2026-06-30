@@ -14,14 +14,16 @@ import {
 
 export default function Projects() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [typeFilter, setTypeFilter] = useState("All");
   const [statusFilter, setStatusFilter] = useState("All");
 
   const filteredProjects = projects.filter(project => {
     const matchesSearch = project.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           project.location.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesType = typeFilter === "All" || project.type === typeFilter;
     const matchesStatus = statusFilter === "All" || project.status === statusFilter;
     
-    return matchesSearch && matchesStatus;
+    return matchesSearch && matchesType && matchesStatus;
   });
 
   return (
@@ -44,13 +46,27 @@ export default function Projects() {
                 className="w-full bg-background"
               />
             </div>
-            <div className="w-full md:w-64">
-              <Select value={statusFilter} onValueChange={setStatusFilter}>
+            <div className="w-full md:w-56">
+              <Select value={typeFilter} onValueChange={setTypeFilter}>
                 <SelectTrigger className="bg-background">
-                  <SelectValue placeholder="Filter by Status" />
+                  <SelectValue placeholder="All Types" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="All">All Projects</SelectItem>
+                  <SelectItem value="All">All Types</SelectItem>
+                  <SelectItem value="Open Plot">Open Plot</SelectItem>
+                  <SelectItem value="Apartment">Apartment</SelectItem>
+                  <SelectItem value="Villa">Villa</SelectItem>
+                  <SelectItem value="Commercial">Commercial</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="w-full md:w-56">
+              <Select value={statusFilter} onValueChange={setStatusFilter}>
+                <SelectTrigger className="bg-background">
+                  <SelectValue placeholder="All Status" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="All">All Status</SelectItem>
                   <SelectItem value="Available">Available</SelectItem>
                   <SelectItem value="Ongoing">Ongoing</SelectItem>
                   <SelectItem value="Sold Out">Sold Out</SelectItem>
